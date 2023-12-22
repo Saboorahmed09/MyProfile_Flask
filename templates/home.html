@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>{{ title }}</title>
+</head>
+<body>
+<body>
+
+    {% include 'navbar.html' %}
+
+    <div class="container mt-4">
+        <h1>{{ title }}</h1>
+        <p>Please go through High Level of Professional Experience below and click on My profile for full details on work experience and accomplishments</p>
+
+    <p class="h5"><u>Professional Experience</u></p>
+        <br/>
+    <table class="table table-bordered display-6 ">
+      <thead>
+        <tr>
+          <th scope="col"><p class="h6">Company Name</p></th>
+          <th scope="col"><p class="h6">Qualcomm <br/> Jan 2016 - Nov 2023 </p></th>
+          <th scope="col"><p class="h6">Moschip Semiconductors <br/> Dec 2012 - Dec 2015</p></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row"><p class="h6">Title / Date</p></th>
+          <td>Senior Lead Engineer <br/> Dec 2021-Nov 2023 / 2yrs </td>
+          <td>  - </td>
+        </tr>
+        <tr>
+          <th scope="row"><p class="h6">Title / Date</p></th>
+          <td>Senior Engineer <br/> Dec 2018-Nov 2021 / 3yrs</td>
+          <td>  -  </td>
+        </tr>
+        <tr>
+          <th scope="row"><p class="h6">Title / Date</p></th>
+          <td colspan="1">Engineer <br/> Jan 2016-Dec 2018 / 3yrs</td>
+          <td>  -  </td>
+        </tr>
+        <tr>
+          <th scope="row"><p class="h6">Title / Date</p></th>
+          <td>  -  </td>
+          <td colspan="1">Engineer 1 <br/> Client Location : Qualcomm <br/> Dec 2012-Dec 2015 / 3yrs</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    </div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+    <!-- Include Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

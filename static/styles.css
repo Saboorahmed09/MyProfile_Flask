@@ -1,0 +1,104 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.navbar {
+    background-color: #007bff;
+}
+
+.navbar-brand {
+    color: #ffffff !important;
+    font-size: 1.5rem;
+}
+
+.navbar-toggler-icon {
+    background-color: #ffffff;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+}
+
+#profile-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.course {
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0;
+}
+
+.course h2 {
+    margin: 0 0 5px;
+    color: #007bff;
+}
+
+.course p {
+    margin: 5px 0;
+    color: #333;
+}
+
+.container h1 {
+    color: #007bff;
+}
+
+.container p {
+    color: #333;
+}
+
+/* Home Page Styles */
+body.home {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.home h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.home p {
+    font-size: 1.1rem;
+}
+
+/* Login Page Styles */
+body.login {
+    background-color: #f8f9fa;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    color: #007bff;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: 1px solid #007bff;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+    border: 1px solid #0056b3;
+}

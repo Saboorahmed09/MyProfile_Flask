@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>profile Display</title>
+</head>
+<body>
+
+    {% include 'navbar.html' %}
+
+    <div id="profile-container" class="container mt-4">
+                <h6 class="card-text"><label for="post-title"> CI/CD, DevOps, LEAD | BUILD & INTEGRATION, LEAD ENGINEER | PROJECT LEAD | PROGRAM ANALYST</label></h6>
+        {% for post in posts %}
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title"><label for="post-title">Title</label> : {{ post.title }}</h5>
+                <h6 class="card-text"><label for="post-title">Description :</label></h6> {{ post.content }}
+            </div>
+        </div>
+        {% endfor %}
+
+<!-- Form for posting content -->
+<!--     <form id="post-form" method="post" action="/">
+        <div class="form-group">
+            <label for="post-title">Title</label>
+            <input type="text" class="form-control" id="post-title" name="title" required>
+        </div>
+        <div class="form-group">
+            <label for="post-content">Content</label>
+            <textarea class="form-control" id="post-content" name="content" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Post Content</button>
+    </form> -->
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+
+</body>
+</html>
+

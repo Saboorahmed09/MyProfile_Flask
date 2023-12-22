@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+    {% include 'navbar.html' %}
+
+    <!-- Add your logout content here -->
+
+    <a class="navbar-brand" href="#">
+      <img src="{{ url_for('static', filename='nature.webp')}}" class="figure-img img-fluid rounded" alt="" width="500" height="500">
+    <figcaption class="figure-caption text-end">A Beginner's Guide.</figcaption>
+    </a>
+    <br/>
+    <figure class="text-end">
+      <blockquote class="blockquote">
+        <p>Change is inevitable. Change will always happen, but you have to apply direction to change, and that's when it's progress</p>
+      </blockquote>
+      <figcaption class="blockquote-footer">
+       Doug Baldwin <cite title="Source Title"> </cite>
+      </figcaption>
+    </figure>
+
+    <!-- Add more elements and styling based on your requirements -->
+
+</body>
+</html>
