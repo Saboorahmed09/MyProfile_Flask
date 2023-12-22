@@ -2,7 +2,7 @@
 <nav class="navbar navbar-expand-lg bg-secondary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img src="{{ url_for('static', filename='logo.png')}}" alt="" width="30" height="24">
+      <img src="{{ url_for('static', filename='images/logo_sa.jpg')}}" alt="" width="30" height="24">
     </a>
     <a class="navbar-brand" href="{{ url_for('quotes') }}">Saboor Ahmed</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -15,9 +15,14 @@
                     <a class="nav-link" href="{{ url_for('home') }}">Home</a>
                 </li>
 
-                <li class="nav-item">
+<!--                 <li class="nav-item">
                     <a class="nav-link" href="{{ url_for('myprofile') }}">My Profile</a>
-                </li>
+                </li> -->
+
+                <a class="nav-item nav-link" href="{{ url_for('myprofile') }}">
+                  <img src="{{ url_for('static', filename='images/profile.png')}}" alt="" width="30" height="24">
+                  MyProfile
+                </a>
 
                 <li class="nav-item">
                     <a class="nav-link" href="{{ url_for('login') }}">Login</a>

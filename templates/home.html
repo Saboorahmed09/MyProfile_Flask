@@ -8,15 +8,17 @@
     <title>{{ title }}</title>
 </head>
 <body>
-<body>
 
     {% include 'navbar.html' %}
+
 
     <div class="container mt-4">
         <h1>{{ title }}</h1>
         <p>Please go through High Level of Professional Experience below and click on My profile for full details on work experience and accomplishments</p>
-
-    <p class="h5"><u>Professional Experience</u></p>
+    <a class="navbar-brand" href="">
+      <img src="{{ url_for('static', filename='images/work.jpg')}}" alt="" width="40" height="34">
+      <p class="h5"><u>Professional Experience</u></p>
+    </a>
         <br/>
     <table class="table table-bordered display-6 ">
       <thead>
