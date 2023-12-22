@@ -72,9 +72,9 @@ def admin():
 def no_access():
     return render_template('no_access.html')
 
-@app.route('/quotes')
-def quotes():
-    return render_template('quotes.html')
+@app.route('/index')
+def index():
+    return render_template('index.html')
 
 
 @app.route('/get_profile')
